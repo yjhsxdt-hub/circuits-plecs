@@ -3,7 +3,7 @@ Plecs {
   Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
-  TimeSpan      "ts"
+  TimeSpan      "3"
   Timeout       ""
   Solver        "auto"
   MaxStep       "1e-3"
@@ -54,15 +54,15 @@ Plecs {
   ScriptsDialogSplitterPos "0"
   Schematic {
     Location      [0, 23; 1920, 989]
-    ZoomFactor    1.30957
-    SliderPosition [0, 399]
+    ZoomFactor    1.71498
+    SliderPosition [57, -1]
     ShowBrowser   off
     BrowserWidth  100
     Component {
       Type          Comparator
       Name          "Comparator"
       Show          off
-      Position      [1010, 600]
+      Position      [970, 565]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -71,7 +71,7 @@ Plecs {
       Type          LogicalOperator
       Name          "Logical\nOperator"
       Show          off
-      Position      [1075, 600]
+      Position      [1035, 565]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -90,7 +90,7 @@ Plecs {
       Type          TriangleGenerator
       Name          "Carrier"
       Show          off
-      Position      [945, 640]
+      Position      [905, 605]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -124,7 +124,7 @@ Plecs {
       Type          Goto
       Name          "Goto"
       Show          off
-      Position      [1130, 600]
+      Position      [1090, 565]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -148,7 +148,7 @@ Plecs {
       Type          Goto
       Name          "Goto1"
       Show          off
-      Position      [1040, 570]
+      Position      [1000, 535]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -173,7 +173,7 @@ Plecs {
       SrcComponent  "Components/Control/Continuous/Continuous PID\\nController"
       Name          "Current Controller"
       Show          on
-      Position      [820, 580]
+      Position      [780, 545]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -318,7 +318,7 @@ Plecs {
       Type          From
       Name          "From2"
       Show          off
-      Position      [730, 625]
+      Position      [690, 590]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -342,7 +342,7 @@ Plecs {
       Type          Sum
       Name          "Sum"
       Show          off
-      Position      [730, 580]
+      Position      [690, 545]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -371,7 +371,7 @@ Plecs {
       Type          Gain
       Name          "Gain"
       Show          on
-      Position      [910, 580]
+      Position      [870, 545]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -406,7 +406,7 @@ Plecs {
       SrcComponent  "Components/Electrical/Machines/DC Machine"
       Name          "DC Machine"
       Show          on
-      Position      [835, 730]
+      Position      [870, 750]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -496,7 +496,7 @@ Plecs {
       Type          RotationalSpeedSensor
       Name          "Speed\nSensor"
       Show          on
-      Position      [930, 865]
+      Position      [965, 885]
       Direction     right
       Flipped       off
       LabelPosition west
@@ -510,7 +510,7 @@ Plecs {
       Type          RotationalReference
       Name          "Rotational\nFrame"
       Show          off
-      Position      [930, 890]
+      Position      [965, 910]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -519,7 +519,7 @@ Plecs {
       Type          Goto
       Name          "Goto3"
       Show          off
-      Position      [965, 840]
+      Position      [1000, 860]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -541,9 +541,9 @@ Plecs {
     }
     Component {
       Type          DCVoltageSource
-      Name          "V_dc1"
-      Show          off
-      Position      [835, 820]
+      Name          "V_f"
+      Show          on
+      Position      [870, 840]
       Direction     right
       Flipped       on
       LabelPosition north
@@ -558,7 +558,7 @@ Plecs {
       SrcComponent  "Components/Electrical/Power Modules/HB1"
       Name          "HB2"
       Show          off
-      Position      [535, 795]
+      Position      [570, 815]
       Direction     up
       Flipped       off
       LabelPosition west
@@ -648,7 +648,7 @@ Plecs {
       Type          From
       Name          "From3"
       Show          off
-      Position      [470, 765]
+      Position      [505, 785]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -672,7 +672,7 @@ Plecs {
       Type          From
       Name          "From4"
       Show          off
-      Position      [470, 825]
+      Position      [505, 845]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -696,7 +696,7 @@ Plecs {
       Type          DCVoltageSource
       Name          "Vin"
       Show          on
-      Position      [370, 795]
+      Position      [405, 815]
       Direction     down
       Flipped       on
       LabelPosition east
@@ -710,7 +710,7 @@ Plecs {
       Type          Ammeter
       Name          "Am3"
       Show          off
-      Position      [630, 795]
+      Position      [665, 815]
       Direction     left
       Flipped       off
       LabelPosition south
@@ -719,7 +719,7 @@ Plecs {
       Type          Goto
       Name          "Goto4"
       Show          off
-      Position      [630, 765]
+      Position      [665, 785]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -744,7 +744,7 @@ Plecs {
       SrcComponent  "Components/Control/Continuous/Continuous PID\\nController"
       Name          "Speed Controller"
       Show          on
-      Position      [630, 580]
+      Position      [590, 545]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -889,7 +889,7 @@ Plecs {
       Type          Sum
       Name          "Sum1"
       Show          off
-      Position      [500, 580]
+      Position      [460, 545]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -918,7 +918,7 @@ Plecs {
       Type          From
       Name          "From5"
       Show          off
-      Position      [500, 630]
+      Position      [460, 595]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -942,7 +942,7 @@ Plecs {
       Type          Step
       Name          "Step1"
       Show          on
-      Position      [400, 580]
+      Position      [360, 545]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -971,7 +971,7 @@ Plecs {
       Type          Step
       Name          "Torque"
       Show          on
-      Position      [710, 830]
+      Position      [745, 850]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1000,7 +1000,7 @@ Plecs {
       Type          ControlledTorque
       Name          "Tm"
       Show          on
-      Position      [785, 865]
+      Position      [820, 885]
       Direction     left
       Flipped       off
       LabelPosition east
@@ -1024,16 +1024,379 @@ Plecs {
       Type          RotationalReference
       Name          "Rotational\nFrame1"
       Show          off
-      Position      [785, 890]
+      Position      [820, 910]
       Direction     up
       Flipped       off
       LabelPosition south
+    }
+    Component {
+      Type          From
+      Name          "From"
+      Show          off
+      Position      [845, 330]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "ia"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From1"
+      Show          off
+      Position      [710, 305]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "wm"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Step
+      Name          "Step2"
+      Show          on
+      Position      [710, 350]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Time"
+        Value         "1"
+        Show          on
+      }
+      Parameter {
+        Variable      "Before"
+        Value         "100"
+        Show          on
+      }
+      Parameter {
+        Variable      "After"
+        Value         "282"
+        Show          on
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalMux
+      Name          "Mux"
+      Show          off
+      Position      [805, 345]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope"
+      Show          on
+      Position      [890, 360]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [0, 27; 1920, 1042]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAK4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAAB4AAAAPcAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":214,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "4"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Voltmeter
+      Name          "Vm1"
+      Show          off
+      Position      [625, 870]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Goto
+      Name          "Goto5"
+      Show          off
+      Position      [665, 870]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Va"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From6"
+      Show          off
+      Position      [845, 365]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Va"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "Probe"
+      Show          on
+      Position      [830, 410]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "DC Machine"
+        Path          ""
+        Signals       {"Electrical torque"}
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope1"
+      Show          on
+      Position      [935, 290]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [0, 27; 1920, 1051]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAAB4AAAAPlAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":64,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      Axes          "2"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
     }
     Connection {
       Type          Signal
       SrcComponent  "Carrier"
       SrcTerminal   1
-      Points        [975, 640; 975, 605]
+      Points        [935, 605; 935, 570]
       DstComponent  "Comparator"
       DstTerminal   2
     }
@@ -1048,7 +1411,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Comparator"
       SrcTerminal   3
-      Points        [1040, 600]
+      Points        [1000, 565]
       Branch {
         DstComponent  "Logical\nOperator"
         DstTerminal   2
@@ -1088,17 +1451,17 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "V_dc1"
+      SrcComponent  "V_f"
       SrcTerminal   1
-      Points        [795, 820; 795, 760]
+      Points        [830, 840; 830, 780]
       DstComponent  "DC Machine"
       DstTerminal   3
     }
     Connection {
       Type          Wire
-      SrcComponent  "V_dc1"
+      SrcComponent  "V_f"
       SrcTerminal   2
-      Points        [870, 820; 870, 760]
+      Points        [905, 840; 905, 780]
       DstComponent  "DC Machine"
       DstTerminal   4
     }
@@ -1120,7 +1483,7 @@ Plecs {
       Type          Wire
       SrcComponent  "Vin"
       SrcTerminal   1
-      Points        [370, 740]
+      Points        [405, 760]
       DstComponent  "HB2"
       DstTerminal   2
     }
@@ -1128,7 +1491,7 @@ Plecs {
       Type          Wire
       SrcComponent  "DC Machine"
       SrcTerminal   1
-      Points        [745, 730; 745, 795]
+      Points        [780, 750; 780, 815]
       DstComponent  "Am3"
       DstTerminal   2
     }
@@ -1157,8 +1520,9 @@ Plecs {
       Type          Rotational
       SrcComponent  "Speed\nSensor"
       SrcTerminal   1
-      Points        [865, 845]
+      Points        [920, 865]
       Branch {
+        Points        [920, 790]
         DstComponent  "DC Machine"
         DstTerminal   5
       }
@@ -1171,7 +1535,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Torque"
       SrcTerminal   1
-      Points        [745, 830; 745, 865]
+      Points        [780, 850; 780, 885]
       DstComponent  "Tm"
       DstTerminal   2
     }
@@ -1186,7 +1550,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Gain"
       SrcTerminal   2
-      Points        [970, 580; 970, 595]
+      Points        [930, 545; 930, 560]
       DstComponent  "Comparator"
       DstTerminal   1
     }
@@ -1208,36 +1572,102 @@ Plecs {
       Type          Wire
       SrcComponent  "Vin"
       SrcTerminal   2
-      Points        [370, 850; 535, 850]
+      Points        [405, 870; 570, 870]
       Branch {
         DstComponent  "HB2"
         DstTerminal   3
       }
       Branch {
-        Points        [535, 915; 985, 915; 985, 730]
-        DstComponent  "DC Machine"
-        DstTerminal   2
+        Points        [570, 935; 625, 935]
+        Branch {
+          Points        [1020, 935; 1020, 750]
+          DstComponent  "DC Machine"
+          DstTerminal   2
+        }
+        Branch {
+          DstComponent  "Vm1"
+          DstTerminal   2
+        }
       }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "HB2"
-      SrcTerminal   4
-      DstComponent  "Am3"
-      DstTerminal   1
     }
     Connection {
       Type          Signal
       SrcComponent  "Speed\nSensor"
       SrcTerminal   2
-      Points        [965, 865]
+      Points        [1000, 885]
       DstComponent  "Goto3"
       DstTerminal   1
     }
+    Connection {
+      Type          Signal
+      SrcComponent  "From1"
+      SrcTerminal   1
+      Points        [755, 305; 755, 340]
+      DstComponent  "Mux"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Step2"
+      SrcTerminal   1
+      DstComponent  "Mux"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux"
+      SrcTerminal   1
+      DstComponent  "Scope"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From"
+      SrcTerminal   1
+      Points        [855, 330; 855, 355]
+      DstComponent  "Scope"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "HB2"
+      SrcTerminal   4
+      Points        [625, 815]
+      Branch {
+        DstComponent  "Am3"
+        DstTerminal   1
+      }
+      Branch {
+        DstComponent  "Vm1"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Vm1"
+      SrcTerminal   3
+      DstComponent  "Goto5"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From6"
+      SrcTerminal   1
+      DstComponent  "Scope"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe"
+      SrcTerminal   1
+      Points        [860, 410]
+      DstComponent  "Scope"
+      DstTerminal   4
+    }
     RectangleAnnotation {
-      Position     [750, 1565]
-      Width        90
-      Height       70
+      Position     [720, 565]
+      Width        830
+      Height       190
       CornerRadius 3
       Thickness    2
       PenColor     4278190080
@@ -1245,6 +1675,27 @@ Plecs {
       BrushColor   0
       BrushAlpha   0
     } 
+    Annotation {
+      Name          "<html><body>\n<p><span style=\" font-size:20px; font-weig"
+"ht:700;\">Controller</span></p></body></html>"
+      Position      [720, 495]
+    } 
+    RectangleAnnotation {
+      Position     [720, 825]
+      Width        830
+      Height       260
+      CornerRadius 3
+      Thickness    2
+      PenColor     4278190080
+      PenAlpha     1
+      BrushColor   0
+      BrushAlpha   0
+    } 
+    Annotation {
+      Name          "<html><body>\n<p><span style=\" font-size:20px; font-weig"
+"ht:700;\">Half-Bridge - DC Motor</span></p></body></html>"
+      Position      [725, 720]
+    } 
   }
 }
-DemoSignature "fIt4xdH531edK052uYXIl6KiFD6oeRCFAcR0zvegfeQ="
+DemoSignature "kOl9aVqDYC7rc3qw4b7Lj5s0waK2HqOPiruZ2QyI9sI="
